@@ -54,13 +54,7 @@ python benchmark/generate_traj.py --model claude-opus-4-6
 python benchmark/generate_openai_compatible.py generate --model deepseek-reasoner --api-base https://api.deepseek.com
 ```
 
-**2. Select golden trajectories** (LLM judge picks best-of-3 frontier runs):
-
-```bash
-python benchmark/pickup_trajectories.py --judge-model claude-opus-4-6
-```
-
-**3. Rubric evaluation** (9 metrics: 3 algorithmic + 6 LLM-judged):
+**2. Rubric evaluation** (9 metrics: 3 algorithmic + 6 LLM-judged):
 
 ```bash
 # benchmark trajectories vs golden
