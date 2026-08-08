@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- FinTrace project ---
+.DS_Store
+results/
+log/
+# datasets live on Hugging Face (see data/testset/HUGGINGFACE.txt); local copies stay untracked
+data/corpus/
+data/dpo/
+data/trajectory/
+data/testset/*.json
+mcp_tool_call_schema_extract/

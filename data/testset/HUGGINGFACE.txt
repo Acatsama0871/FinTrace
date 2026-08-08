@@ -1,0 +1,9 @@
+FinTrace evaluation set is hosted on Hugging Face:
+
+    https://huggingface.co/datasets/YupengCao/FinTrace
+
+evaluation/testset.json on HF == data/testset/testset.json here.
+
+Download programmatically:
+    from huggingface_hub import hf_hub_download
+    path = hf_hub_download("YupengCao/FinTrace", "evaluation/testset.json", repo_type="dataset")
