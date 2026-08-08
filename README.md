@@ -10,7 +10,7 @@ action correctness, execution efficiency, process quality, and output quality.
 dataset for financial tool-calling (SFT + DPO on Qwen3-8B/32B).
 
 - Paper: *FinTrace* (COLM 2026)
-- Dataset: [YupengCao/FinTrace](https://huggingface.co/datasets/YupengCao/FinTrace) on Hugging Face
+- Dataset: [FinTrace](https://huggingface.co/datasets/YupengCao/FinTrace) on Hugging Face
 
 ## Setup
 
@@ -69,12 +69,6 @@ python rubrics/judge.py evaluate -t data/trajectory/testset_trajectory/selected_
 # trained-model rollouts (base/SFT/DPO)
 python rubrics/judge_rollouts.py evaluate -d data/trajectory/rollouts/test_eval_0806/dpo8b \
     -o results/trained_qwen3_8b -m claude-sonnet-4-6 --model-name dpo8b --no-batch
-```
-
-**4. DPO data construction** (rubric scores → chosen/rejected pairs):
-
-```bash
-python scripts/split_dpo_good_bad.py
 ```
 
 Batch runners for full sweeps live in `scripts/run_*.sh`; figures are generated
